@@ -23,7 +23,6 @@ export default function Post() {
         return (
           <PostItem
             key={post.id}
-            id={post.id}
             username={post.username}
             userImg={post.userImg}
             imgPost={post.imgPost}

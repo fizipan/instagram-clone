@@ -9,7 +9,9 @@ export default function MiniProfile() {
         <p className="text-sm text-gray-500 truncate">Hafizh Maulana Yusliansyah</p>
       </div>
       <div>
-        <button className="text-blue-400 font-semibold text-xs">Sign Out</button>
+        <button type="button" className="text-blue-400 font-semibold text-xs">
+          Sign Out
+        </button>
       </div>
     </div>
   );

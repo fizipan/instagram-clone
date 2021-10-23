@@ -10,7 +10,7 @@ export default function StoryItem(props: StoryItemProps) {
       <img
         src={avatar}
         className="w-14 h-14 rounded-full p-[1.5px] border-2 border-red-500 object-contain cursor-pointer transform hover:scale-110 transition-all duration-200 ease-out"
-        alt={`${username} image`}
+        alt={`${username}`}
       />
       <p className="text-sm w-14 text-gray-500 truncate">{username}</p>
     </div>

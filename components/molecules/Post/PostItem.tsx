@@ -9,14 +9,13 @@ import {
 import Image from 'next/image';
 
 interface PostItemProps {
-  id: number;
   username: string;
   userImg: string;
   imgPost: string;
   caption: string;
 }
 export default function PostItem(props: PostItemProps) {
-  const { id, username, userImg, imgPost, caption } = props;
+  const { username, userImg, imgPost, caption } = props;
   return (
     <div className="bg-white shadow-sm border border-gray-200 rounded-md my-5">
       {/* Profile */}
@@ -62,7 +61,9 @@ export default function PostItem(props: PostItemProps) {
           className="flex-1 border-none focus:outline-none focus:ring-0"
           placeholder="Add a comment..."
         />
-        <button className="text-blue-400 font-semibold">Post</button>
+        <button type="button" className="text-blue-400 font-semibold">
+          Post
+        </button>
       </form>
     </div>
   );

@@ -1,12 +1,11 @@
 interface SuggestionItemProps {
-  id: number;
   username: string;
   companyName: string;
   avatar: string;
 }
 
 export default function SuggestionItem(props: SuggestionItemProps) {
-  const { id, username, companyName, avatar } = props;
+  const { username, companyName, avatar } = props;
   return (
     <div className="flex items-center space-x-4 py-2">
       <div className="flex-shrink-0">
@@ -17,7 +16,9 @@ export default function SuggestionItem(props: SuggestionItemProps) {
         <p className="text-xs text-gray-500">{companyName}</p>
       </div>
       <div>
-        <button className="text-xs font-semibold text-blue-400">Follow</button>
+        <button type="button" className="text-xs font-semibold text-blue-400">
+          Follow
+        </button>
       </div>
     </div>
   );
